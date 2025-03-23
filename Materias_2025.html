@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Materias 2025</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Boldonse', sans-serif;
+            margin-left: 40px; 
+            margin-right: 40px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #2b4e34;
+            line-height: 1.6;
+        }
+
+        .botonera {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #ffffff; 
+            padding: 10px 0;
+            z-index: 1000; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+                    }
+
+/* Diseño de los botones */
+        .boton {
+            color: #2e2d2d;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+                }
+
+/* Efecto hover en los botones */
+.boton:hover {
+    color: #666;
+             }
+
+        /* Títulos */
+        h1 {
+            font-size: 64px; 
+            font-weight: 700;
+            color: #2b4e34;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2b4e34;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+        /* Línea secundaria con sangría */
+        .sublinea {
+            display: block;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para la sección de avisos */
+.listado_materias {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para cada materia */
+.materia {
+    margin-bottom: 24px; 
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Última materia sin borde inferior */
+.materia:last-child {
+    border-bottom: none;
+}
+
+/* Título de la materia */
+.materia h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b4e34;
+    margin-bottom: 10px;
+}
+
+.materias-lista {
+    color: #2b4e34;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.materias-lista li {
+    font-size: 16px;
+    color: #2b4e34;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease;
+}
+
+.materias-lista li:last-child {
+    border-bottom: none; 
+}
+
+.materias-lista li:hover {
+    background-color: #f9fafb;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #555;
+    font-size: 12px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enlaces del footer */
+.footer-link {
+    color: #4f46e5;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-link:hover {
+    color: #4f46e5;
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Botonera -->
+    <div class="botonera">
+        <a href="Home.html" class="boton">home</a>
+        <a href="Avisos.html" class="boton">avisos</a>
+        <a href="Sobre_mi.html" class="boton">sobre mi</a>
+        <a href="Materias_2025.html" class="boton">materias 2025</a>
+        <a href="Contacto.html" class="boton">contacto</a>
+    </div>
+
+    <header>
+        <div style="height: 150px;"></div>
+        <h1>Materias</h1> 
+        <h2>Licenciatura en Gestión de Tecnología de la Informacion</h2>
+    </header>
+
+    <main>
+        <section class="listado_materias">
+            <div class="materia">
+                <h3>Primer Año</h3>
+                <ol>             
+                    <li>Introducción a la Algoritmia</li>
+                    <li>Sistemas de Información I</li>
+                    <li>Arquitectura de Computadores</li>
+                    <li>Marketing</li>
+                    <li><a href="https://virtualbsp.uade.edu.ar/d2l/home/43615" target="_blank">Diseño y Desarrollo web</a></li>
+                    <li>Algoritmos y Estructuras de Datos I</li>
+                    <li>Sistemas de Información II</li>
+                    <li>Sistemas Operativos</li>
+                    <li>Matemática Discreta</li>
+                    <li>Testing de Aplicaciones</li>
+                </ol>
+            </div>
+            
+            <div class="materia">
+                <h3>Segundo Año</h3>
+                <ol>
+                    <li>Algoritmos y Estructuras de Datos II</li>
+                    <li>Paradigma Orientado a Objetos</li>
+                    <li>Redes de Datos</li>
+                    <li>Fundamentos de Economía</li>
+                    <li>Gestión de Personas en Organizaciones de Tecnología</li>
+                    <li>Diseño y Análisis de Algoritmos</li>
+                    <li>Dirección de Proyectos de Tecnología</li>
+                    <li>Ingeniería de Datos I</li>
+                    <li>Ingeniería de Software</li>
+                    <li>Liderazgo y Negociación</li>
+                </ol>
+            </div>
+        
+            <div class="materia">
+                <h3>Tercer Año</h3>
+                <ol>             
+                    <li>Optativa I</li>
+                    <li>Aplicaciones Interactivas</li>
+                    <li>Proceso de Desarrollo de Software</li>
+                    <li>Seguridad e Integridad de la Información</li>
+                    <li>Probabilidad y Estadística</li>
+                    <li>Examen de Inglés</li>
+                    <li>Optativa II</li>
+                    <li>Seminario de Gestión de Tecnología</li>
+                    <li>Ingeniería de Datos II</li>
+                    <li>Evaluación de Proyectos de Tecnología</li>
+                    <li>Estadística Avanzada</li>
+                </ol>
+            </div>
+
+            <div class="materia">
+                <h3>Cuarto Año</h3>
+                <ol>
+                    <li>Optativa III</li>
+                    <li>Desarrollo de Aplicaciones I</li>
+                    <li>Seguridad de Procesos y Aplicaciones</li>
+                    <li>Ciencia de Datos</li>
+                    <li>Tendencias Tecnológicas</li>
+                    <li>Optativa IV</li>
+                    <li>Desarrollo de Aplicaciones II</li>
+                    <li>Tecnología e Innovación</li>
+                    <li>Negocios Tecnológicos</li>
+                    <li>Derecho Informático</li>
+                </ol>
+            </div>
+        </section>
+        
+    
+    </main>
+
+    <footer>
+        <span>© 2025 Todos los derechos reservados.</span>
+        ➡️<a href="https://www.uade.edu.ar/" target="_blank" class="footer-link">UADE</a>
+        ➡️<a href="https://www.webcampus.uade.edu.ar/" target="_blank" class="footer-link">Webcampus</a>
+    </footer>
+
+</body>
+</html>

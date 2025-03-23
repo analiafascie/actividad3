@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Sobre mí</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Boldonse', sans-serif;
+            margin-left: 40px; 
+            margin-right: 40px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Botonera */
+        .botonera {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #ffffff; 
+            padding: 10px 0;
+            z-index: 1000; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+        }
+
+        .boton {
+            color: #2e2d2d;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            color: #666;
+        }
+
+        /* Contenedor sobre mí */
+        .sobre_mi-container {
+            display: flex;
+            align-items: center; 
+            gap: 20px; 
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        /* Cuadro a la izquierda */
+        .cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: #2b4e34; 
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex-shrink: 0; 
+        }
+
+        /* Texto */
+        .sobre_mi-texto {
+            flex: 1;
+            
+        }
+
+        h1 {
+            font-size: 64px; 
+            font-weight: 700;
+            color: #2b4e34;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2b4e34;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer-link {
+            color: #4f46e5;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .footer-link:hover {
+            color: #4f46e5;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .sobre_mi-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                
+            }
+
+            .cuadro {
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botonera -->
+<div class="botonera">
+    <a href="Home.html" class="boton">home</a>
+    <a href="Avisos.html" class="boton">avisos</a>
+    <a href="Sobre_mi.html" class="boton">sobre mi</a>
+    <a href="Materias_2025.html" class="boton">materias 2025</a>
+    <a href="Contacto.html" class="boton">contacto</a>
+</div>
+
+<!-- Encabezado -->
+<header>
+    <div style="height: 150px;"></div>
+    <h1>Analía Fascie</h1> 
+    <h2>Estudiante de Lic. en Gestión de Tecnología de la Información</h2>
+</header>
+
+<!-- Sobre mí -->
+<main>
+    <section class="sobre_mi-container">
+        <!-- Imagen -->
+        <div class="imagen-perfil">
+            <img src="fotoAnalia.jpeg" alt="Foto de perfil"; style="border-radius: 8px; width: 100px; height: 100px; object-fit: cover;">
+        </div>
+        
+        <!-- Texto -->
+        <div class="sobre_mi-texto">
+            <h3>Sobre mí</h3>
+            <p>
+                Profesional con más de 3 años de experiencia en marketing, especializada en el desarrollo y ejecución de estrategias de engagement y retención de clientes. 
+                He trabajado en la optimización de campañas de cross-sell y up-sell, utilizando datos para personalizar la experiencia del cliente y aumentar la fidelización. 
+                Mi experiencia en la gestión y análisis de datos me ha permitido implementar soluciones efectivas basadas en CRM, mejorando la segmentación y el rendimiento de las campañas. Además, poseo un enfoque estratégico que combina creatividad y análisis, impulsando resultados medibles y sostenibles a largo plazo.
+            </p>
+        </div>
+    </section>
+</main>
+
+
+<!-- Footer -->
+<footer>
+    <span>© 2025 Todos los derechos reservados.</span>
+    ➡️ <a href="https://www.uade.edu.ar/" target="_blank" class="footer-link">UADE</a>
+    ➡️ <a href="https://www.webcampus.uade.edu.ar/" target="_blank" class="footer-link">Webcampus</a>
+</footer>
+
+</body>
+</html>

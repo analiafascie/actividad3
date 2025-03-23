@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Boldonse', sans-serif;
+            margin-left: 40px; 
+            margin-right: 40px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .botonera {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #ffffff; 
+            padding: 10px 0;
+            z-index: 1000; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+                    }
+
+/* Diseño de los botones */
+        .boton {
+            color: #2e2d2d;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+                }
+
+/* Efecto hover en los botones */
+.boton:hover {
+    color: #666;
+             }
+
+        /* Títulos */
+        h1 {
+            font-size: 64px; 
+            font-weight: 700;
+            color: #2b4e34;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2b4e34;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+
+        .sublinea {
+            display: block;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #2b4e34;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2b4e34;
+    font-family: 'Boldonse', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #2b4e34;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Boldonse', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2b4e34;
+
+}
+
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #555;
+    font-size: 12px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enlaces del footer */
+.footer-link {
+    color: #4f46e5;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-link:hover {
+    color: #4f46e5;
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Botonera -->
+    <div class="botonera">
+        <a href="Home.html" class="boton">home</a>
+        <a href="Avisos.html" class="boton">avisos</a>
+        <a href="Sobre_mi.html" class="boton">sobre mi</a>
+        <a href="Materias_2025.html" class="boton">materias 2025</a>
+        <a href="Contacto.html" class="boton">contacto</a>
+    </div>
+
+    <header>
+        <div style="height: 150px;"></div>
+        <h1>Contacto</h1> 
+        <h2>Preguntame</h2>
+    </header>
+
+    <main>
+        <section class="avisos">
+            <form action="/action_page.php" class="contact-form">
+                <div class="input-group">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="fname" placeholder="Escribe tu nombre">
+                </div>
+    
+                <div class="input-group">
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="lname" placeholder="Escribe tu apellido">
+                </div>
+    
+                <div class="input-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Escribí tu mensaje aquí..."></textarea>
+                </div>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <span>© 2025 Todos los derechos reservados.</span>
+        ➡️<a href="https://www.uade.edu.ar/" target="_blank" class="footer-link">UADE</a>
+        ➡️<a href="https://www.webcampus.uade.edu.ar/" target="_blank" class="footer-link">Webcampus</a>
+    </footer>
+
+</body>
+</html>

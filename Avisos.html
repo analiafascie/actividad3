@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Avisos</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Boldonse', sans-serif;
+            margin-left: 40px; 
+            margin-right: 40px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .botonera {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #ffffff; 
+            padding: 10px 0;
+            z-index: 1000; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+                    }
+
+/* Diseño de los botones */
+        .boton {
+            color: #2e2d2d;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+                }
+
+/* Efecto hover en los botones */
+.boton:hover {
+    color: #666;
+             }
+
+        /* Títulos */
+        h1 {
+            font-size: 64px; 
+            font-weight: 700;
+            color: #2b4e34;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2b4e34;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2b4e34;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+        /* Línea secundaria con sangría */
+        .sublinea {
+            display: block;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para la sección de avisos */
+.avisos {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para cada materia */
+.materia {
+    margin-bottom: 24px; 
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Última materia sin borde inferior */
+.materia:last-child {
+    border-bottom: none;
+}
+
+/* Título de la materia */
+.materia h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b4e34;
+    margin-bottom: 10px;
+}
+
+/* Lista desordenada */
+.materia ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+/* Ítems de la lista */
+.materia li {
+    font-size: 16px;
+    padding: 8px 0;
+    color: #2b4e34;
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+/* Último ítem de la lista sin borde */
+.materia li:last-child {
+    border-bottom: none;
+}
+
+/* Efecto hover en ítems de la lista */
+.materia li:hover {
+    background-color: #e7f1b7;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #555;
+    font-size: 12px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enlaces del footer */
+.footer-link {
+    color: #4f46e5;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-link:hover {
+    color: #4f46e5;
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Botonera -->
+    <div class="botonera">
+        <a href="Home.html" class="boton">home</a>
+        <a href="Avisos.html" class="boton">avisos</a>
+        <a href="Sobre_mi.html" class="boton">sobre mi</a>
+        <a href="Materias_2025.html" class="boton">materias 2025</a>
+        <a href="Contacto.html" class="boton">contacto</a>
+    </div>
+
+    <header>
+        <div style="height: 150px;"></div>
+        <h1>Avisos</h1> 
+        <h2>Tareas pendientes</h2>
+    </header>
+
+    <main>
+        <section class="avisos">
+            <div class="materia">
+                <h3>Diseño y Desarrollo Web</h3>
+                <h4>UVA 1 - Introduccion al desarrollo web</h4>
+                <ul>               
+                    <li>Ejercicio Sobre Mi.</li>
+                    <li>Cuestionario Multiple choice Arquitectura</li>
+                    <li>Ejercicio Integrador.</li>
+                    <li>Ejercicio HTML Etiquetas</li>
+                </ul>
+            </div>
+            
+            <div class="materia">
+                <h3>Introduccion a la Informática</h3>
+                <h4>UVA 2 - Programación Estructurada</h4>
+                <ul>
+                    <li>Multiple choice - Programación estructurada.</li>
+                    <li>Guía de preguntas - algoritmos elementales.</li>
+                </ul>
+            </div>
+        
+            <div class="materia">
+                <h3>Base de Datos</h3>
+                <h4>UVA 2 - Evolucion histórica</h4>
+                <ul>
+                    <li>Ejercicio individual - Historia de los microprocesadores.</li>
+                </ul>
+            </div>
+        </section>
+        
+    
+    </main>
+
+    <footer>
+        <span>© 2025 Todos los derechos reservados.</span>
+        ➡️<a href="https://www.uade.edu.ar/" target="_blank" class="footer-link">UADE</a>
+        ➡️<a href="https://www.webcampus.uade.edu.ar/" target="_blank" class="footer-link">Webcampus</a>
+    </footer>
+
+</body>
+</html>
